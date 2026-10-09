@@ -1,0 +1,19 @@
+{
+  "platform": "macOS arm64",
+  "sourceRepository": "https://github.com/motorbridge/motorbridge",
+  "sourceCommit": "1397a3c887b9ea064032766d39f80a312338e7b6",
+  "files": {
+    "libPCBUSB.dylib": {
+      "source": "third_party/pcan/macos/macOS_Library_for_PCANUSB_v0.13.tar.gz",
+      "sha256": "35c022b4dc7f0276c9d0a7fac89b3ade7c26dce94e9de3180f4fb22a29ca44a4"
+    },
+    "libdm_device.dylib": {
+      "source": "third_party/dm_device/v1.1.0/macos/arm64/libdm_device.dylib",
+      "sha256": "39fa19eeb285134047722e57f05b91c212b1de3c323d47b1e7f627069463402d"
+    }
+  },
+  "archive": {
+    "source": "third_party/pcan/macos/macOS_Library_for_PCANUSB_v0.13.tar.gz",
+    "sha256": "e06e5d650868b11ecb4c27f03749e61ab43825580c644ec593dd3e7ac7be0dd5"
+  }
+}

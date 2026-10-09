@@ -1,0 +1,24 @@
+{
+  "name": "motorbridge-control",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "node src/server.js",
+    "build": "node scripts/build.js",
+    "start": "node src/server.js --production",
+    "test": "node --test tests/*.test.js",
+    "setup": "npm ci && npm ci --prefix plugins/motorbridge-studio/ui && npm run setup:gateway",
+    "setup:gateway": "python3 scripts/setup-gateway.py"
+  },
+  "dependencies": {
+    "cordis": "4.0.0-rc.10",
+    "ws": "8.18.3"
+  },
+  "devDependencies": {
+    "vite": "6.1.0"
+  }
+}
